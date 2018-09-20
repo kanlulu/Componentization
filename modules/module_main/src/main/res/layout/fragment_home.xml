@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/holo_green_light"
+            android:paddingTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="组件化架构"
+            android:textSize="@dimen/sp_20" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:background="@drawable/bg_white_shadow_corner4"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="跳转Login组件"
+            android:textSize="@dimen/sp_20"
+            android:textAllCaps="false"
+            android:textColor="@color/black_333333" />
+
+        <Button
+            android:id="@+id/btn_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:background="@drawable/bg_white_shadow_corner4"
+            android:textSize="@dimen/sp_20"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="跳转Credit组件"
+            android:textAllCaps="false"
+            android:textColor="@color/black_333333" />
+
+        <Button
+            android:id="@+id/btn_checkVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="156dp"
+            android:background="@drawable/bg_white_shadow_corner4"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="CheckVersion"
+            android:textAllCaps="false"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+</layout>

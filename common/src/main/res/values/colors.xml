@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--以下是各种背景色块-->
+    <color name="gray_f3f5fa">#f3f5fa</color>
+    <color name="gray_e7ecf4">#e7ecf4</color>
+    <color name="blue_459aca">#459aca</color>
+    <color name="black_b2000000">#b2000000</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+
+    <!--以下是文字颜色-->
+    <color name="white_ffffff">#ffffff</color>
+    <color name="white_f0f0f0">#f0f0f0</color>
+    <color name="main_background">#fafafa</color>
+    <color name="gray_404b59">#404b59</color><!--主要正文文字-->
+    <color name="gray_95a5b8">#95a5b8</color><!--输入框提示文字-->
+    <color name="blue_617082">#617082</color><!--说明性文字-->
+    <color name="gray_ced5de">#ced5de</color><!--输入框提示文字-->
+    <color name="black_333333">#333333</color>
+
+
+    <!--以下是色块+文字颜色共用色值-->
+    <color name="red_f9542d">#f9542d</color>
+    <color name="green_10c644">#10c644</color><!--成功，还款，提升额度-->
+    <color name="blue_4a90e2">#4a90e2</color><!--有链接功能的文字-->
+    <!-- divide颜色-->
+    <color name="gray_efefef">#efefef</color><!-- divide1颜色-->
+
+
+    <!--文字按钮色-->
+    <color name="red_df4b28">#df4b28</color><!--红色按下-->
+    <color name="green_0eb13d">#0eb13d</color><!--绿色按下-->
+
+
+    <color name="gray_98aec9">#98aec9</color><!--不可点击-->
+
+    <color name="trunslate_00000000">#00000000</color>
+
+    <color name="color_used">#999999</color>
+    <color name="color_unused">#ff7a35</color>
+
+    <color name="color_btn_unenable">#d1d1d1</color>
+</resources>

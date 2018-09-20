@@ -1,0 +1,35 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_top" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/icon_success" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/textview_404b59"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="恭喜您，还款成功!"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_jump"
+            style="@style/textview_95a5b8"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="跳转至首页 3s"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,26 @@
+<resources>
+    <!--字体大小，固定-->
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="dp_indicator">5dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="radius_login_btn">48dp</dimen>
+    <dimen name="divide_1dp">1dp</dimen>
+    <dimen name="size_credit_img">45dp</dimen>
+    <dimen name="height_credit_item">75dp</dimen>
+    <dimen name="elevation_credit_item">1dp</dimen>
+    <dimen name="textsize_credit_brief">14sp</dimen>
+    <dimen name="textsize_credit_title">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="padding_radiobutton">6dp</dimen>
+    <dimen name="textsize_radiobutton">15sp</dimen>
+
+</resources>

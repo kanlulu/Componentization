@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/borrow_empty" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/textview_404b59"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="暂时还没有内容哦"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_empty"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="30dp"
+        android:text="去赚收益"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

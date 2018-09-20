@@ -1,0 +1,71 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+def cfg = rootProject.ext.configuration
+
+android {
+    compileSdkVersion cfg.compileVersion
+
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //ARouter 每个业务组件都需要写
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    //同样的依赖路径存在多个
+    packagingOptions {
+        exclude 'META-INF/rxjava'
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                //集成开发模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':common')
+    //每个业务组件都需要引入ARouter的annotation处理器
+    annotationProcessor("com.alibaba:arouter-compiler:1.2.1") {
+//        exclude group: 'android.support.v7'//根据包名排除
+//        exclude group: 'android.support.support-media-compat:25.2.0'
+    }
+}

@@ -1,0 +1,89 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/gray_f3f5fa</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="textview_95a5b8">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_95a5b8</item>
+    </style>
+
+    <style name="textview_f9542d">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/red_f9542d</item>
+    </style>
+
+    <style name="textview_404b59">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_404b59</item>
+    </style>
+
+    <style name="textview_arrow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+        <!--<item name="android:drawablePadding">10dp</item>-->
+        <item name="android:drawableRight">@mipmap/mine_more_back</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/gray_404b59</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textview_no_arrow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/gray_404b59</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- dialog的进出动画样式 -->
+    <style name="bottom_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_disappear</item>
+    </style>
+
+    <!-- 网络进度条 -->
+    <style name="progressBar_update" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/bg_progressbar_update</item>
+    </style>
+
+    <declare-styleable name="vericationCodeInput">
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension"/>
+        <attr name="child_v_padding" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="box_bg_focus" format="reference"/>
+        <attr name="box_bg_normal" format="reference"/>
+        <attr name="inputType" format="string"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

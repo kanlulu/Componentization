@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_white_corner16"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_option1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="支付宝支付"
+        android:textColor="@color/gray_404b59"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_95a5b8" />
+
+    <TextView
+        android:id="@+id/tv_option3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/gray_95a5b8"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

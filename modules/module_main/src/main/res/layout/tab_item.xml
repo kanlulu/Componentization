@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/white_ffffff">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:scaleType="fitXY"
+        tools:src="@mipmap/home_selected" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_below="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/selector_color_graytored"
+        android:textSize="@dimen/sp_12"
+        tools:text="我要借款" />
+
+    <View
+        android:id="@+id/mine_tab_dot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@drawable/bg_message_dot"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="-2dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

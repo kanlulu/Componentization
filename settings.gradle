@@ -1,0 +1,7 @@
+include ':app', ':common', ':module_main', ':module_credit', ':module_login', ':module_baseevent', ':jpush'
+
+project(':module_baseevent').projectDir = new File(rootDir, 'bean/module_baseevent')
+project(':jpush').projectDir = new File(rootDir, 'thirdparty/jpush')
+project(':module_main').projectDir = new File(rootDir, 'modules/module_main')
+project(':module_credit').projectDir = new File(rootDir, 'modules/module_credit')
+project(':module_login').projectDir = new File(rootDir, 'modules/module_login')

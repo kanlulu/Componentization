@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+def cfg = rootProject.ext.configuration
+def libs = rootProject.ext.libraries
+
+android {
+    compileSdkVersion cfg.compileVersion
+
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //ARouter
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:${libs.supportVersion}"
+
+    //ARouter
+    implementation 'com.alibaba:arouter-api:1.4.0'
+    annotationProcessor("com.alibaba:arouter-compiler:1.2.1") {
+//        exclude group: 'android.support.v7'//根据包名排除
+//        exclude group: 'android.support.support-media-compat:25.2.0'
+    }
+}
