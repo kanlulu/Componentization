@@ -28,8 +28,8 @@
  第三方功能模块,如：jpush、umeng、map等，主要目的是为了这些模块能够快速的接入项目或从  
  项目中快速移除而对其他模块和组件的影响尽量减少。
     
- _在modules下有一个module_main的组件，这个组件中我们通常会包含启动页、引导页和应用的主页面(也就是传  
- 统所说的MainActivity)_
+ _在modules下有一个module_main的组件，这个组件中我们通常会包含启动页、引导页和应用的主页面(也就是通  
+ 常所说的MainActivity)_
  #### 模块化与组件化切换  
 ````
 if (isModule.toBoolean()) {
@@ -79,7 +79,7 @@ if (isModule.toBoolean()) {
 </manifest>
 ````
 可以看到除了Activity的区别外，application也做了更改。application的icon、label等必要元素需要在模块化  
-打包时体现出来。  
+时体现出来。  
 至于在组件化和模块化时使用不同的manifest文件，也可以在当前模块的build.gradle中进行配置
 ````
 android{
