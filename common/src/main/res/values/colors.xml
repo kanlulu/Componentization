@@ -26,7 +26,7 @@
 
     <!--以下是色块+文字颜色共用色值-->
     <color name="red_f9542d">#f9542d</color>
-    <color name="green_10c644">#10c644</color><!--成功，还款，提升额度-->
+    <color name="green_10c644">#10c644</color><!--成功，提升额度-->
     <color name="blue_4a90e2">#4a90e2</color><!--有链接功能的文字-->
     <!-- divide颜色-->
     <color name="gray_efefef">#efefef</color><!-- divide1颜色-->

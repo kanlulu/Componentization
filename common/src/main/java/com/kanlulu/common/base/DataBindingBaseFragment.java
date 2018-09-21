@@ -14,7 +14,6 @@ import com.kanlulu.common.utils.threepart.UmengUtils;
 
 /**
  * 基Fragment，用于处理页面统一事件，复杂页面请用MVPBaseFragment
- * Created by lingxiaoming on 2017/7/21 0021.
  */
 
 public abstract class DataBindingBaseFragment<B extends ViewDataBinding> extends Fragment {

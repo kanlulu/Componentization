@@ -1,7 +1,6 @@
 package com.kanlulu.common.bean;
 
 import android.databinding.BaseObservable;
-import android.text.TextUtils;
 
 import com.kanlulu.common.BR;
 
@@ -67,7 +66,6 @@ public class User extends BaseObservable implements Serializable {
     public String remark;//备注
     public boolean hasSaveContacts;//通讯录是否已保存 true:已保存  false:未保存
     public List<BankCardInfo> bank_list;//当前用户包含的银行卡信息列表
-    public int zmCreditScore;
 
     public String companyName;//	单位名称
     public String companyAddress;//		单位地址
@@ -141,57 +139,4 @@ public class User extends BaseObservable implements Serializable {
         notifyPropertyChanged(BR._all);
     }
 
-    public String getPassword() {
-        return pwd;
-    }
-
-    public BankCardInfo getDefaultBankCard() {
-        if (bank_list == null) return null;
-        for (BankCardInfo bank : bank_list) {
-            if (bank.isDefault) {
-                return bank;
-            }
-        }
-        return null;
-    }
-
-    public String getCompanyAddress1() {
-        if (TextUtils.isEmpty(companyAddress)) return "";
-        if (!companyAddress.contains("@@@")) return companyAddress;
-        String[] strings = companyAddress.split("@@@");
-        return strings.length > 1 ? strings[0] : "";
-    }
-
-    public String getCompanyAddress2() {
-        if (TextUtils.isEmpty(companyAddress)) return "";
-        if (!companyAddress.contains("@@@")) return companyAddress;
-        String[] strings = companyAddress.split("@@@");
-        return strings.length > 1 ? strings[1] : strings[0];
-    }
-
-    public String getCompanyPhone1() {
-        if (TextUtils.isEmpty(companyPhone)) return "";
-        if (!companyPhone.contains("@@@")) return companyPhone;
-        String[] strings = companyPhone.split("@@@");
-        return strings.length >= 1 ? strings[0] : "";
-    }
-
-    public String getCompanyPhone2() {
-        if (TextUtils.isEmpty(companyPhone)) return "";
-        if (!companyPhone.contains("@@@")) return companyPhone;
-        String[] strings = companyPhone.split("@@@");
-        return strings.length > 1 ? strings[1] : "";
-    }
-
-    public boolean isAllRealName() {
-        if (idVerified == 1 && !TextUtils.isEmpty(idCardBackPath) && !TextUtils.isEmpty(idCardPhotoPath))
-            return true;
-        return false;
-    }
-
-    public boolean isNeedBack() {
-        if (idVerified == 1 && TextUtils.isEmpty(idCardBackPath))
-            return true;
-        return false;
-    }
 }

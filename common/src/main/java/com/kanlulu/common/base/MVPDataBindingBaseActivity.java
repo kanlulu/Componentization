@@ -11,7 +11,6 @@ import rx.Subscription;
 
 /**
  * MVP的Activity，注册和销毁view在这里，简单页面请继承用BaseActivity
- * Created by lingxiaoming on 2017/7/21 0021.
  */
 
 public abstract class MVPDataBindingBaseActivity<P extends BasePresenter, B extends ViewDataBinding> extends DataBindingBaseActivity<B> {

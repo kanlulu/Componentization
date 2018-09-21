@@ -20,7 +20,7 @@
             style="@style/textview_404b59"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="恭喜您，还款成功!"
+            android:text="恭喜您，我的成功!"
             android:textSize="17sp" />
 
         <TextView

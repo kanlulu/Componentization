@@ -20,7 +20,6 @@ import java.util.List;
 
 /**
  * 弹框样式集合
- * Created by lingxiaoming on 2017/8/8 0008.
  *
  */
 

@@ -10,7 +10,6 @@ import java.io.IOException;
 
 /**
  * 文件相关工具类
- * Created by lingxiaoming on 2017/9/12 0012.
  */
 
 public class FileUtils {

@@ -21,7 +21,6 @@ import java.util.List;
 
 /**
  * 数组选择器
- * Created by lingxiaoming on 2017/8/11 0011.
  */
 
 public class TextPicker extends ScrollView {

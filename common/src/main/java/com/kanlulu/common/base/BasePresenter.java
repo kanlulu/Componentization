@@ -5,7 +5,6 @@ import java.lang.ref.WeakReference;
 
 /**
  * Presenter基类
- * Created by lingxiaoming on 2017/7/21 0021.
  */
 
 public class BasePresenter<V> {

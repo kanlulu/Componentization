@@ -25,7 +25,6 @@ import com.kanlulu.common.utils.threepart.UmengUtils;
 
 /**
  * 基activity，用于处理页面统一事件，复杂页面请用MVPBaseActivity
- * Created by lingxiaoming on 2017/7/21 0021.
  */
 
 public abstract class DataBindingBaseSplashActivity<B extends ViewDataBinding> extends FragmentActivity implements BroadCastReceiverUtil.OnReceiveBroadcast {

@@ -11,7 +11,6 @@ import rx.Subscription;
 
 /**
  * MVP的Fragment，注册和销毁view在这里，简单页面请继承用BaseFragment
- * Created by lingxiaoming on 2017/7/21 0021.
  */
 
 public abstract class MVPDataBindingBaseFragment<P extends BasePresenter, B extends ViewDataBinding> extends DataBindingBaseFragment<B> {

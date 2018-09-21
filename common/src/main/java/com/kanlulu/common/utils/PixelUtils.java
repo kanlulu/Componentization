@@ -5,7 +5,6 @@ import android.util.TypedValue;
 
 /**
  * dp,px,sp转换
- * Created by lingxiaoming on 2016/8/4 0004.
  */
 public class PixelUtils {
     /**

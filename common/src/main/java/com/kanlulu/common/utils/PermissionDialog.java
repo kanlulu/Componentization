@@ -8,7 +8,6 @@ import com.yanzhenjie.permission.SettingService;
 
 /**
  * 申请权限再次提示弹框
- * Created by lingxiaoming on 2017/8/11 0011.
  */
 
 public class PermissionDialog {

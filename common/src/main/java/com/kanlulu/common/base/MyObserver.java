@@ -2,7 +2,6 @@ package com.kanlulu.common.base;
 
 
 import com.kanlulu.common.network.ApiException;
-import com.kanlulu.common.tools.CommonDataManager;
 import com.kanlulu.common.utils.LogUtils;
 import com.kanlulu.common.utils.ToastUtils;
 import com.jakewharton.retrofit2.adapter.rxjava2.HttpException;
@@ -44,12 +43,6 @@ public abstract class MyObserver<T> implements Observer<T> {
             ApiException apiException = (ApiException) e;
             LogUtils.e(TAG, "ApiException onError: " + apiException.errorCode + " " + e.getMessage());
             if (apiException.errorCode == ApiException.ERROR_OTHER_LOGIN) {//下线通知
-                CommonDataManager.setUser(null);
-                CommonDataManager.setStatistics(null);
-//                if (!Constants.IS_LOGINOUT) {
-                //账号被顶替 弹窗提示
-//                    MainActivity.goAndShowOtherLoginDialog(ActivityManager.getAppManager().currentActivity(), errorMessage);
-//                }
                 return;
             } else if (apiException.errorCode == ApiException.ERROR_UN_SAFE) {//风控失败
                 onOtherError(ApiException.ERROR_UN_SAFE);

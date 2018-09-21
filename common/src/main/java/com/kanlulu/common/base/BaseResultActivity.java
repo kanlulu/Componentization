@@ -9,7 +9,6 @@ import com.kanlulu.common.databinding.ActivityResultBinding;
 
 /**
  * 有倒计时的结果页，抽象类
- * Created by lingxiaoming on 2017/8/4 0004.
  */
 
 public abstract class BaseResultActivity extends DataBindingBaseActivity<ActivityResultBinding> {
