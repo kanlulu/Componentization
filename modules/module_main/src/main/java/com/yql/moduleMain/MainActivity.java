@@ -6,6 +6,7 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.yql.common.base.MainMVPBaseActivity;
 import com.yql.common.bean.User;
 import com.yql.common.bean.Version;
@@ -27,10 +28,10 @@ import org.greenrobot.eventbus.ThreadMode;
 @Route(path = NavigatorPath.MODULE_MAIN_ACTIVITY)
 public class MainActivity extends MainMVPBaseActivity<MainContract.Presenter, ActivityMainBinding> implements MainContract.View {
     private FragmentTabHost fragmentTabHost;
-    private String[] titles = {"我要借款", "贷款超市", "个人中心"};
+    private String[] titles = {"首页", "超市", "我的"};
     private Class[] fragments = {HomeFragment.class, ShopFragment.class, MineFragment.class};
     private int[] tabsDrawables = {R.drawable.rb_money, R.drawable.rb_daochao, R.drawable.rb_huankuan};
-    private String[] noShopTitles = {"我要借款", "个人中心"};
+    private String[] noShopTitles = {"首页", "我的"};
     private Class[] noShopFragments = {HomeFragment.class, MineFragment.class};
     private int[] noShopTabsDrawables = {R.drawable.rb_money, R.drawable.rb_huankuan};
 
@@ -58,7 +59,8 @@ public class MainActivity extends MainMVPBaseActivity<MainContract.Presenter, Ac
     private void setupTabUI() {
         fragmentTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         fragmentTabHost.setup(this, getSupportFragmentManager(), R.id.container);
-
+        ARouter.getInstance().build(NavigatorPath.MODULE_CREDIT_ACTIVITY)
+                .navigation();
         if (ApiConstants.NO_SHOP) {
             for (int i = 0; i < noShopTitles.length; i++) {
                 TabHost.TabSpec spec = fragmentTabHost.newTabSpec(i + "").setIndicator(getView(i));
