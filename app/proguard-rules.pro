@@ -236,14 +236,14 @@
 
 #######################################↑第三方End↑#############################################
 # 实体类
--keep class com.yql.common.bean.** { *; }
--keep class com.yql.module_baseevent.BusEventBean.** { *; }
+-keep class com.kanlulu.common.bean.** { *; }
+-keep class com.kanlulu.module_baseevent.BusEventBean.** { *; }
 
 # 自定义控件
--keep class com.yql.common.widget.**{*;}
+-keep class com.kanlulu.common.widget.**{*;}
 
 #NetWork接口
--keep class com.yql.common.network.**{*;}
+-keep class com.kanlulu.common.network.**{*;}
 
 # Keep JavascriptInterface
 -keepclassmembers class ** {

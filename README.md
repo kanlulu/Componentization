@@ -46,7 +46,7 @@ if (isModule.toBoolean()) {
 - 组件化时的manifest:
 ````
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yql.module_credit">
+    package="com.kanlulu.module_credit">
 
     <application android:theme="@style/AppTheme">
         <activity android:name=".CreditActivity" />
@@ -57,7 +57,7 @@ if (isModule.toBoolean()) {
 - 模块化时的manifest:
 ````
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yql.module_credit">
+    package="com.kanlulu.module_credit">
     
     <application
         android:name="debug.CreditApplication"

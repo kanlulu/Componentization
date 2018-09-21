@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yql.module_login">
+    package="com.kanlulu.module_login">
 
     <application android:theme="@style/AppTheme">
-        <activity android:name="com.yql.module_login.LoginActivity" />
+        <activity android:name="com.kanlulu.module_login.LoginActivity" />
     </application>
 
 </manifest>

@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yql.jpush">
+    package="com.kanlulu.jpush">
 
     <permission
-        android:name="com.yql.moduletest.permission.JPUSH_MESSAGE"
+        android:name="com.kanlulu.moduletest.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
     <!-- Required -->
-    <uses-permission android:name="com.yql.moduletest.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.kanlulu.moduletest.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -42,13 +42,13 @@
 
         <provider
             android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="com.yql.moduletest.DataProvider"
+            android:authorities="com.kanlulu.moduletest.DataProvider"
             android:exported="true" />
 
         <!-- since 3.1.0 Required SDK 核心功能-->
         <provider
             android:name="cn.jpush.android.service.DownloadProvider"
-            android:authorities="com.yql.moduletest.DownloadProvider"
+            android:authorities="com.kanlulu.moduletest.DownloadProvider"
             android:exported="true" />
 
         <!-- Required SDK 核心功能-->
@@ -57,7 +57,7 @@
             android:enabled="true">
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
-                <category android:name="com.yql.moduletest" />
+                <category android:name="com.kanlulu.moduletest" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -82,7 +82,7 @@
                 <action android:name="cn.jpush.android.ui.PushActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.yql.moduletest" />
+                <category android:name="com.kanlulu.moduletest" />
             </intent-filter>
         </activity>
         <!-- SDK 核心功能-->
@@ -93,7 +93,7 @@
             android:theme="@style/MyDialogStyle">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.yql.moduletest" />
+                <category android:name="com.kanlulu.moduletest" />
             </intent-filter>
         </activity>
 

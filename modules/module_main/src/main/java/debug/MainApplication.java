@@ -1,8 +1,8 @@
 package debug;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.yql.common.BuildConfig;
-import com.yql.common.base.BaseApplication;
+import com.kanlulu.common.BuildConfig;
+import com.kanlulu.common.base.BaseApplication;
 
 /**
  * Created by kanlulu
