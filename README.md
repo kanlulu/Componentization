@@ -28,12 +28,12 @@ if (isModule.toBoolean()) {
  此目录下皆为按照业务划分的各个组件，组件之间的通信和跳转采用EventBus和ARouter，以达到组件  
  之间解耦的目的，能够做到组件的移除、增加、修改不影响其他组件的使用和整体项目的运行；
  
- - bean：
+ - bean：  
  主要存放EventBus的事件类、ARouter的path、网络请求的实体类等，这些东西和业务组件是高度耦合的，  
  为了最大程度的降低common模块和业务组件的耦合度，我们将事件类、path路径和实体类等内容单独创建一个  
  module，让其被common依赖以最大程度的实现common与具体业务的解耦；  
  
- - thirdparty：
+ - thirdparty：  
  第三方功能模块,如：jpush、umeng、map等，主要目的是为了这些模块能够快速的接入项目或从  
  项目中快速移除而对其他模块和组件的影响尽量减少。
   
