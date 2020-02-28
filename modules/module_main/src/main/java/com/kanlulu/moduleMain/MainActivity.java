@@ -1,12 +1,12 @@
 package com.kanlulu.moduleMain;
 
-import android.view.View;
+import android.app.Dialog;
+import android.view.*;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.kanlulu.common.base.MainMVPBaseActivity;
 import com.kanlulu.common.bean.User;
 import com.kanlulu.common.bean.Version;
@@ -49,6 +49,28 @@ public class MainActivity extends MainMVPBaseActivity<MainContract.Presenter, Ac
     public void initFirst() {
         setupTabUI();
         bindListener();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+//        showFullScreenDialog();
+    }
+
+    private void showFullScreenDialog() {
+        Dialog dialog = new Dialog(MainActivity.this, R.style.popupDialog);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.fragment_home);
+        dialog.setCancelable(true);
+        Window window = dialog.getWindow();
+        if (window != null) {
+            window.setGravity(Gravity.CENTER);
+            WindowManager.LayoutParams attributes = window.getAttributes();
+            attributes.width = ViewGroup.LayoutParams.MATCH_PARENT;
+            attributes.height = ViewGroup.LayoutParams.MATCH_PARENT;
+            window.setAttributes(attributes);
+        }
+        dialog.show();
     }
 
     private void bindListener() {

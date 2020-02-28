@@ -2,15 +2,15 @@
 
 ext {
     configuration = [
-            compileVersion  : 27,
+            compileVersion  : 28,
             minSdkVersion   : 16,
-            targetSdkVersion: 27,
+            targetSdkVersion: 28,
             versionCode     : 1,
             versionName     : "1.0.1"
     ]
 
     libraries = [
-            supportVersion: "27.1.1",
+            supportVersion: "28.0.0",
             jpush         : "3.1.6",
             jcore         : "1.2.5",
     ]
@@ -33,7 +33,8 @@ allprojects {
     repositories {
         mavenCentral()
         jcenter()
-        maven { url "https://jitpack.io" }
+        maven { url "https://jitpack.io"}
+        maven { url "https://maven.google.com" }
         google()
     }
 }

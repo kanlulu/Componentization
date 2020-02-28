@@ -44,5 +44,6 @@ android {
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:${libs.supportVersion}"
+    api 'com.android.support:support-core-utils:28.0.0'
 
 }
